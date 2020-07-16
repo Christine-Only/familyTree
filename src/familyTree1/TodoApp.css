@@ -1,0 +1,64 @@
+.container {
+  width: 400px;
+  margin: 100px auto;
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.box {
+  margin-right: 12px;
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+.name {
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.noExtend {
+  margin-right: 12px;
+}
+
+.noExtend:last-child {
+  margin-right: 0;
+}
+
+.name:hover {
+  background: skyBlue;
+}
+
+.fadeOut {
+  animation: fadeOut .5s  cubic-bezier(.42,.04,.58,.93);
+}
+
+.fadeIn {
+  animation: fadeIn .5s  cubic-bezier(.42,.04,.58,.93);
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

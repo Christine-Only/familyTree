@@ -1,0 +1,67 @@
+.container {
+  width: 90%;
+  margin: 100px auto;
+  border: 1px solid #ddd;
+}
+
+.table-container {
+  padding: 15px;
+  text-align: center;
+}
+
+.box {
+  margin-right: 12px;
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.name {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.name:hover {
+  background: skyBlue;
+}
+
+.noExtend {
+  margin-right: 12px;
+}
+
+.noExtend:last-child {
+  margin-right: 0;
+}
+
+.fadeOut {
+  animation: FadeOut .5s ease-out;
+}
+
+.fadeIn {
+  animation: FadeIn .5s ease-in;
+}
+
+@keyframes FadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

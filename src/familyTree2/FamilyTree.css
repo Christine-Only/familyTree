@@ -1,0 +1,57 @@
+.familyTree {
+  width: 90vw;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10vh auto 0;
+}
+.blockWrapper {
+  margin-right: 8px;
+}
+.blockWrapper:last-child {
+  margin-right: 0;
+}
+.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.flex.fadeIn {
+  animation: fadeIn .5s cubic-bezier(.42,.04,.58,.93);
+}
+.flex.fadeOut {
+  animation: fadeOut .5s cubic-bezier(.42,.04,.58,.93);
+}
+.identity {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 2px 6px;
+  margin-bottom: 8px;
+}
+.identity:last-child {
+  margin-right: 0;
+}
+.identity:hover {
+  background: skyblue;
+}
+.noExtend {
+  margin-right: 8px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
